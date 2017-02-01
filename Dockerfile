@@ -16,7 +16,5 @@ RUN apk add --update --no-cache ncurses \
         && rm -rf /var/cache/apk/* /tmp/* \
         && apk del deps
 
-CMD ["--help"]
-
 ENTRYPOINT ["/usr/bin/samtools"]
-
+CMD ["--help"]
