@@ -18,3 +18,4 @@ RUN apk add --update --no-cache ncurses \
 
 ENTRYPOINT ["/usr/bin/samtools"]
 CMD ["--help"]
+
