@@ -1,5 +1,7 @@
 # docker-samtools
 
+Dockerfile for samtools
+
 ## Build
 
 ```bash
