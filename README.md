@@ -40,6 +40,6 @@ $ docker tag samtools hisplan/samtools:latest
 $ docker push hisplan/samtools:latest
 ```
 
-# Other Notes
+## Other Notes
 
 - This uses Alpine Linux as base image.
