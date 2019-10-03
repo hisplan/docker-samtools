@@ -1,6 +1,6 @@
 # docker-samtools
 
-Dockerfile for samtools
+Dockerized samtools
 
 ## Prerequisites
 
@@ -13,21 +13,21 @@ Dockerfile for samtools
 1. Build it and give it a name as `samtools`.
 
     ```bash
-    $ docker build -t samtools .
+    $ ./build.sh
     ```
 
 1. Verify if the image is correctly built.
 
     ```bash
     $ docker images samtools
-    REPOSITORY     TAG          IMAGE ID         CREATED        SIZE
-    samtools       latest       c4ac0043ef77     2 days ago     15 MB
+    REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+    samtools            1.3.1               c625fb59d9ee        14 seconds ago      16.8MB
     ```
 
 ## Run
 
 ```bash
-$ docker run --rm -it samtools --help
+$ docker run --rm -it samtools:1.3.1 --help
 ```
 
 ## Push
@@ -35,9 +35,7 @@ $ docker run --rm -it samtools --help
 If you want to push the image to Docker Hub:
 
 ```bash
-$ docker login
-$ docker tag samtools hisplan/samtools:latest
-$ docker push hisplan/samtools:latest
+$ ./package.sh
 ```
 
 ## Other Notes
