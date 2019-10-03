@@ -2,10 +2,6 @@
 
 Dockerized samtools
 
-## Prerequisites
-
-- Docker must be installed on your machine.
-
 ## Build
 
 1. Download the `Dockerfile` from this git repository.
@@ -21,13 +17,13 @@ Dockerized samtools
     ```bash
     $ docker images samtools
     REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-    samtools            1.3.1               c625fb59d9ee        14 seconds ago      16.8MB
+    samtools            1.9                 008f246d3a26        17 seconds ago      353MB
     ```
 
 ## Run
 
 ```bash
-$ docker run --rm -it samtools:1.3.1 --help
+$ docker run --rm -it samtools:1.9 --help
 ```
 
 ## Push
@@ -37,7 +33,3 @@ If you want to push the image to Docker Hub:
 ```bash
 $ ./package.sh
 ```
-
-## Other Notes
-
-- This uses Alpine Linux as base image.

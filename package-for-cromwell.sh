@@ -2,7 +2,7 @@
 
 hub="hisplan"
 image_name="cromwell-samtools"
-version="1.3.1"
+version="1.9"
 
 echo "Building ${image_name}:${version}..."
 
