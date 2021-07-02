@@ -28,7 +28,7 @@ $ docker run --rm -it samtools:1.9 --help
 
 ## Push
 
-If you want to push the image to Docker Hub:
+Configure your Docker registry in `config.sh`, then run:
 
 ```bash
 $ ./package.sh
