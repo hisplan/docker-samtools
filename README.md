@@ -2,34 +2,22 @@
 
 Dockerized samtools
 
-## Build
-
-1. Download the `Dockerfile` from this git repository.
-
-1. Build it and give it a name as `samtools`.
-
-    ```bash
-    $ ./build.sh
-    ```
-
-1. Verify if the image is correctly built.
-
-    ```bash
-    $ docker images samtools
-    REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-    samtools            1.9                 008f246d3a26        17 seconds ago      353MB
-    ```
-
-## Run
+## How to Run
 
 ```bash
 $ docker run --rm -it samtools:1.9 --help
 ```
 
-## Push
-
-Configure your Docker registry in `config.sh`, then run:
+## Build Container Image
 
 ```bash
-$ ./package.sh
+./build.sh
+```
+
+## Push to Docker Registry
+
+Either you can use the `docker push` command or run `push.sh` (requires [SCING](https://github.com/hisplan/scing)):
+
+```bash
+./push.sh
 ```
