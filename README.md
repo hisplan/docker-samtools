@@ -5,7 +5,7 @@ Dockerized samtools
 ## How to Run
 
 ```bash
-$ docker run --rm -it samtools:1.9 --help
+$ docker run --rm -it samtools:1.13 --help
 ```
 
 ## Build Container Image

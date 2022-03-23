@@ -1,10 +1,10 @@
 FROM ubuntu:20.04
 
 LABEL maintainer="Jaeyoung Chun (chunj@mskcc.org)" \
-      version.samtools="1.9" \
-      source.samtools="https://github.com/samtools/samtools/releases/tag/1.9"
+      version.samtools="1.13" \
+      source.samtools="https://github.com/samtools/samtools/releases/tag/1.13"
 
-ENV SAMTOOLS_VERSION 1.9
+ENV SAMTOOLS_VERSION 1.13
 
 # update package manager & build essentials
 RUN apt-get update \
